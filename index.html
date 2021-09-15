@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="cera pro font/Cera Pro Light.ttf">
     <link rel="stylesheet" href="/cera pro font/Cera Pro Medium.ttf">
+
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -148,19 +150,9 @@
         <section class="section-outer section-hero">
             <div class="section-inner">
                 <div class="wrapper-grid">
-                    <div class="wrapper-grid__one">
+                    <div class="wrapper-grid__one swiper mySwiper">
                         <div class="btn-slide">
-                            <button aria-label="pre">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="19.222" height="8.898" viewBox="0 0 19.222 8.898">
-                                    <g id="Сгруппировать_421" data-name="Сгруппировать 421" transform="translate(0.356 0.351)">
-                                      <line id="Линия_4" data-name="Линия 4" x1="18.866" transform="translate(0 4.098)" fill="none" stroke="#1e1744" stroke-width="1"/>
-                                      <line id="Линия_5" data-name="Линия 5" x1="4.043" y2="4.098" transform="translate(0)" fill="none" stroke="#1e1744" stroke-width="1"/>
-                                      <line id="Линия_6" data-name="Линия 6" x1="4.043" y1="4.098" transform="translate(0 4.098)" fill="none" stroke="#1e1744" stroke-width="1"/>
-                                    </g>
-                                </svg>                                                                  
-                            </button>
-                            <span class="active">1<span> / 6
-                            <button aria-label="next">
+                            <button class="swiper-button-prev" aria-label="next">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.222" height="8.898" viewBox="0 0 19.222 8.898">
                                     <g id="Сгруппировать_110" data-name="Сгруппировать 110" transform="translate(0 0.351)">
                                       <line id="Линия_4" data-name="Линия 4" x2="18.866" transform="translate(0 4.098)" fill="none" stroke="#1e1744" stroke-width="1"/>
@@ -169,19 +161,42 @@
                                     </g>
                                   </svg>                                                                                                  
                             </button>
+                            <div class="swiper-pagination"></div>
+                            <button class="swiper-button-next" aria-label="pre">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.222" height="8.898" viewBox="0 0 19.222 8.898">
+                                    <g id="Сгруппировать_421" data-name="Сгруппировать 421" transform="translate(0.356 0.351)">
+                                      <line id="Линия_4" data-name="Линия 4" x1="18.866" transform="translate(0 4.098)" fill="none" stroke="#1e1744" stroke-width="1"/>
+                                      <line id="Линия_5" data-name="Линия 5" x1="4.043" y2="4.098" transform="translate(0)" fill="none" stroke="#1e1744" stroke-width="1"/>
+                                      <line id="Линия_6" data-name="Линия 6" x1="4.043" y1="4.098" transform="translate(0 4.098)" fill="none" stroke="#1e1744" stroke-width="1"/>
+                                    </g>
+                                </svg>                                                                  
+                            </button>
                         </div>
-                        <div class="text"><span>Помогаем бизнесу</span> <br>выходить из сложных ситуаций<br> и упреждать их <br>возникновение!</div>
-                        <div class="text-2"><span>Помогаем бизнесу</span>выходить из сложных ситуаций и упреждать их возникновение!</div>
-                        <div class="image">
-                            <svg id="Сгруппировать_4" data-name="Сгруппировать 4" xmlns="http://www.w3.org/2000/svg" width="54" height="55" viewBox="0 0 54 55">
-                                <g id="Эллипс_14" data-name="Эллипс 14" transform="translate(54 55) rotate(180)" fill="none" stroke="#fff" stroke-width="2">
-                                  <ellipse cx="27" cy="27.5" rx="27" ry="27.5" stroke="none"/>
-                                  <ellipse cx="27" cy="27.5" rx="26" ry="26.5" fill="none"/>
-                                </g>
-                                <path id="Многоугольник_3" data-name="Многоугольник 3" d="M6.619,1.645a1,1,0,0,1,1.763,0l5.83,10.882A1,1,0,0,1,13.33,14H1.67a1,1,0,0,1-.881-1.472Z" transform="translate(36 20) rotate(90)" fill="#fff"/>
-                            </svg>                              
-                        </div>
-                        <img src="img/f13.png" alt="">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="text"><span>Помогаем бизнесу</span> <br>выходить из сложных ситуаций<br> и упреждать их <br>возникновение!</div>
+                                <div class="text-2"><span>Помогаем бизнесу</span>выходить из сложных ситуаций и упреждать их возникновение!</div>
+                                <div class="image">
+                                    <svg id="Сгруппировать_4" data-name="Сгруппировать 4" xmlns="http://www.w3.org/2000/svg" width="54" height="55" viewBox="0 0 54 55">
+                                        <g id="Эллипс_14" data-name="Эллипс 14" transform="translate(54 55) rotate(180)" fill="none" stroke="#fff" stroke-width="2">
+                                          <ellipse cx="27" cy="27.5" rx="27" ry="27.5" stroke="none"/>
+                                          <ellipse cx="27" cy="27.5" rx="26" ry="26.5" fill="none"/>
+                                        </g>
+                                        <path id="Многоугольник_3" data-name="Многоугольник 3" d="M6.619,1.645a1,1,0,0,1,1.763,0l5.83,10.882A1,1,0,0,1,13.33,14H1.67a1,1,0,0,1-.881-1.472Z" transform="translate(36 20) rotate(90)" fill="#fff"/>
+                                    </svg>                              
+                                </div>
+                                <img src="img/f13.png" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="text"><span>Главное в бизнесе — это любовь. Если вы не завоюете симпатии людей, вы не сможете ничего им продать</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="text"><span>Самое умное бизнес-решение — нанять квалифицированных сотрудников. Правильные люди в компании — это 95% успеха вашего бизнеса</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="text"><span>Если вы не расскажете людям о своём успехе, они, вероятно, о нём не узнают.</div>
+                              </div>
+                            </div>
                     </div>
                     <div class="wrapper-grid__two" style="background: url(img/qwdqw.png);">
                         <div class="image">СМИ</div>
@@ -197,6 +212,8 @@
         </section>
     </main>
     <!-- / HERO -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/mobile.js"></script>
 </body>
 </html>
