@@ -81,7 +81,6 @@
                 </div>
             </div>
             <div class="navigation">
-                <div class="line"></div>
                 <div class="logo">
                     <a href="#home" class="logo-link" aria-label="Logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="78.715" height="69.696" viewBox="0 0 78.715 69.696">
@@ -138,7 +137,7 @@
                         </svg>                          
                     </div>
                     <div class="oline-application__new">
-                        <a href="#" class="oline-application__new-link btn">подать заявку</a>
+                        <a href="#" class="oline-application__new-link btn" id="open_modal">подать заявку</a>
                     </div>
                 </div>
             </div>
@@ -188,13 +187,16 @@
                                 <img src="img/f13.png" alt="">
                               </div>
                               <div class="swiper-slide">
-                                <div class="text"><span>Главное в бизнесе — это любовь. Если вы не завоюете симпатии людей, вы не сможете ничего им продать</div>
+                                <div class="text"><span>Главное в бизнесе</span> — это любовь. Если вы не завоюете симпатии людей, вы не сможете ничего им продать</div>
+                                <div class="text-2"><span>Главное в бизнесе</span> — это любовь. Если вы не завоюете симпатии людей, вы не сможете ничего им продать</div>
                               </div>
                               <div class="swiper-slide">
-                                <div class="text"><span>Самое умное бизнес-решение — нанять квалифицированных сотрудников. Правильные люди в компании — это 95% успеха вашего бизнеса</div>
+                                <div class="text"><span>Самое умное бизнес-решение</span> — нанять квалифицированных сотрудников. Правильные люди в компании — это 95% успеха вашего бизнеса</div>
+                                <div class="text-2"><span>Самое умное бизнес-решение</span> — нанять квалифицированных сотрудников. Правильные люди в компании — это 95% успеха вашего бизнеса</div>
                               </div>
                               <div class="swiper-slide">
-                                <div class="text"><span>Если вы не расскажете людям о своём успехе, они, вероятно, о нём не узнают.</div>
+                                <div class="text"><span>Если вы не расскажете людям о своём успехе, они, вероятно, о нём не узнают</span></div>
+                                <div class="text-2"><span>Если вы не расскажете людям о своём успехе, они, вероятно, о нём не узнают</span></div>
                               </div>
                             </div>
                     </div>
@@ -211,7 +213,25 @@
             </div>
         </section>
     </main>
+    <div class="modal" id="modal">
+        <div class="modal-bg"></div>
+        <div class="modal-body">
+            <button class="close" id="close">	&#215;</button>
+            <h2>ОСТАВЬТЕ ВАШ ТЕЛЕФОН</h2>
+            <div class="text">Ваш звонок очень важен для нас</div>
+            <form class="form">
+                <input type="text" id="name" placeholder="Имя">
+                <input type="text" id="phone" placeholder="Телефон">
+                <input type="text" class="massage" id="massega" placeholder="Комментарий">
+                <input type="button" class="btn-form" value="Отправить">
+                <div class="checkbox">
+                    <input type="checkbox">Даю своё согласие на законную обработку персональных данных. Правила обработки
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- / HERO -->
+    <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/mobile.js"></script>

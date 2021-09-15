@@ -114,6 +114,10 @@ body {
             @media (max-width:$breakpoint-md-max) {
                 text-align: center;
             }
+
+            @media(max-width: $breakpoint-sm-max) {
+                margin-left: $base * 2 ;
+            }
         }
 
         &-link {
@@ -212,6 +216,10 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             margin-left: $base * 13;
+            
+            @media(max-width: $breakpoint-sm-max) {
+                margin-left: $base * 5 ;
+            }
 
             &__item {
 
@@ -234,6 +242,16 @@ body {
 .logo {
     &-link {
         margin-left: 150px;
+
+        @media(max-width: $breakpoint-xl-max) {
+            padding: $base;
+            margin-left: $base * 10 ;
+        }
+
+        @media(max-width: $breakpoint-sm-max) {
+            padding: $base;
+            margin-left: $base * 10 ;
+        }
     }
 }
 
@@ -276,6 +294,12 @@ body {
         top: 48%;
     }
 
+    @media(max-width: $breakpoint-sm-max) {
+        top: 29%;
+    }
+    
+    
+
     .swiper-wrapper {
         width: 560px;
 
@@ -286,6 +310,11 @@ body {
         @media (max-width:$breakpoint-md-max) {
             width: 760px;
         }
+
+        @media(max-width: $breakpoint-sm-max) {
+            width: 415px;
+        }
+        
     }
 
     &__one {  
@@ -337,6 +366,11 @@ body {
                 width: 514px;
                 font-size: 38px;
             }
+
+            @media(max-width: $breakpoint-sm-max) {
+                font-size: 28px;
+                width: 4560px;
+            }
         }
 
         .text {
@@ -354,6 +388,7 @@ body {
             @media (max-width:$breakpoint-md-max) {
                 display: none;
             }
+            
 
             span {
                 font-weight: $fw-bold;
@@ -388,6 +423,10 @@ body {
                 top:73%;
                 left: 12%;
             }
+
+            @media(max-width: $breakpoint-sm-max) {
+                left: 20%;
+            }
         }
     }
     &__two {
@@ -408,6 +447,10 @@ body {
 
         @media (max-width:$breakpoint-md-max) {
             width: 94px;
+        }
+
+        @media(max-width: $breakpoint-sm-max) {
+            width: auto;
         }
 
         .image {
@@ -441,6 +484,10 @@ body {
         @media (max-width:$breakpoint-md-max) {
             width: 246px;
         }
+
+        @media(max-width: $breakpoint-sm-max) {
+            width: auto;
+        }
     }
     &__four {
         display: flex;
@@ -462,6 +509,11 @@ body {
         @media (max-width:$breakpoint-md-max) {
             width: 204px;
         }
+
+        @media(max-width: $breakpoint-sm-max) {
+            grid-column: 1;
+            grid-row: 3;
+        }
     }
     &__five {
         display: flex;
@@ -480,6 +532,11 @@ body {
 
         @media (max-width:$breakpoint-md-max) {
             width: 211px;
+        }
+
+        @media(max-width: $breakpoint-sm-max) {
+            grid-column: 2;
+            grid-row: 3;
         }
 
         .text-day {
@@ -509,5 +566,132 @@ body {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+      }
+
+      .modal {
+          display: none;
+      }
+
+      .modal-bg {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+          z-index: 1;
+      }
+
+      .modal-body {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 40%;
+          margin-left: 30%;
+          top: 100px;
+          bottom: auto;
+          background-color: rgb(248, 241, 228);
+          z-index: 2;
+
+          @media(max-width:$breakpoint-lg-max) {
+              width: 60%;
+              margin-left: 20%;
+          }
+
+          @media(max-width:$breakpoint-lg-max) {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        @media(max-width:$breakpoint-lg-max) {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        @media(max-width:$breakpoint-xs-max) {
+            width: 100%;
+            margin-left: 5%;
+        }
+
+          h2 {
+              text-align: center;
+              margin-top: $base * 12;
+          }
+
+          .text {
+              margin-bottom: $base * 5;
+              text-align: center;
+          }
+      }
+
+      .close{
+        position: absolute;
+        top: 0.3em;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        font-size: 2em;
+        text-indent: 100px;
+        font-size: $fs-xxl;
+        font-weight: $fw-bold;
+        border: none;
+        background-color: rgb(248, 241, 228);
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .close::after{
+        position: relative;
+        top: 0;
+        right: 3.2em;
+        text-indent: 0;
+        content: "\00D7";
+    }
+    .close:hover{
+        color: red;
+    }
+      .form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: $base * 2;
+          padding-right: $base * 2;
+
+          input {
+            border: none;
+            height: $base * 10;
+            margin-top: $base * 2 ;
+            background-color: rgb(243, 243, 243);
+            color: black;
+          }
+          input::placeholder {
+              padding-left: $base * 2;
+          }
+
+          .massage {
+              height: $base * 50;
+          }
+
+          .btn-form {
+              font-size: $fs-m;
+              background-color: gold;
+              cursor: pointer;
+
+              &:hover {
+                  transition: .5s;
+                  background-color: rgb(255, 196, 0);
+              }
+          }
+
+          .checkbox {
+              input {
+                  margin-right: $base * 3;
+                  transform: scale(1.6);
+              }
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: $base;
+          }
       }
 // === / HERO ===
